@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Library</string>
+    <string name="log">aar内的日志</string>
+</resources>
