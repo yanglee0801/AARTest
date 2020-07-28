@@ -8,4 +8,7 @@ public class Test {
     public static void showLog (Context context){
         Log.e("Test",context.getResources().getString(R.string.log));
     }
+    public static void showLog2 (Context context){
+        Log.e("Test",context.getResources().getString(R.string.log2));
+    }
 }

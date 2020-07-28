@@ -1,0 +1,22 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            applicationId    : "com.wj.baseutils",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    def dependVersion = [
+            glide      : "4.5.0",
+    ]
+
+    dependencies = [
+            //base
+            "glide"  : "com.github.bumptech.glide:glide:${dependVersion.glide}",
+            "alibaba": "com.alibaba:fastjson:1.1.70.android",
+            "tc"     : "com.tencent.jg:jg:1.1"
+    ]
+}

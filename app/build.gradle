@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -17,7 +16,13 @@ android {
         }
     }
 }
-
+def support = rootProject.ext.dependencies
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+//    api (name: 'mylibrary-release', ext: 'aar')
+//    api support["glide"]
+    support.each {k, v -> implementation v }
+//    api 'com.alibaba:fastjson:1.1.70.android'
+//    implementation 'com.tencent.jg:jg:1.1'
+//    api 'com.facebook.android:audience-network-sdk:5.6.0'
 }
