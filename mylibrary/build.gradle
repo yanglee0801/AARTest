@@ -22,8 +22,10 @@ android {
 
 }
 
+def support = rootProject.ext.dependencies
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    support.each {k, v -> api v }
 }
 
 //////// 打包发布配置开始 ////////
